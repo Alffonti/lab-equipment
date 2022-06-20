@@ -1,0 +1,54 @@
+.container1 {
+    border: 8px solid #016a26;
+    height: 460px;
+    /*
+    
+    To order child items in a container 
+    I need to convert the parent element into a flexible elements,
+    and specify a direction (main axis).
+
+    I can use justify-content 
+    to distribute the space along the main axis,
+    and align-items
+    to distribute the space along the cross axis,
+
+    justify-content:
+    start, center, end, space-around, 
+    space-evenly, space-between
+    
+    align-items:
+    start, center, end
+    */
+    display: flex;
+    flex-direction: row; /* The default flex-direction value is row  */
+    justify-content: center;
+    align-items: end; /* The default align-items value is stretch (covering the all the avaliable space if the height is not provided)  */
+}
+
+
+.item {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    padding: 10px;
+    font-size: 50px;
+    border: 2px solid black;
+    background: linear-gradient(#14463d, #016a26);
+}
+
+.container2{
+    border: 8px solid #016a26;
+    height: 460px;
+    display: flex;
+    flex-direction: column; /* The default flex-direction value is row  */
+    justify-content: space-between;
+    align-items: center; /* The default align-items value is stretch  */
+}
+
+.container3{
+    border: 8px solid #016a26;
+    height: 460px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start; /* The default align-items value is stretch  */
+}
